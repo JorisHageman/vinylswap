@@ -1,0 +1,45 @@
+@media screen and (min-width: 1201px) {
+    .searchbar_div {
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+      border: 2px solid #c7c7c7;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      max-height: 50px;
+    }
+  
+    .onlyicon {
+      display: none;
+    }
+
+    .figure_promoted_profile {
+      margin-left: 9.5%;
+      margin-right: 11%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .searchbar_div {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    .trending_page_listings {
+        margin-left: 15%;
+        margin-right: 17%;
+    }
+
+
+}
+
+@media screen and (min-width: 400px) {
+    .onlyicon {
+        margin-bottom: 40%;
+    }
+}
