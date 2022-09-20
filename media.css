@@ -17,6 +17,10 @@
       margin-left: 9.5%;
       margin-right: 11%;
     }
+
+    .categories_wrapper {
+      margin-inline: 20%;
+    }
   }
   
   @media screen and (max-width: 1200px) {
@@ -26,7 +30,9 @@
       height: 0;
     }
 
-
+    .categories_wrapper {
+      margin-inline: 7%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -34,12 +40,65 @@
         margin-left: 15%;
         margin-right: 17%;
     }
-
-
 }
 
 @media screen and (min-width: 400px) {
     .onlyicon {
         margin-bottom: 40%;
     }
+
+  }
+
+
+/* CSS GRID */
+
+@media (min-width: 55em) { 
+  .myprofile_settings {
+    grid-column: span 2;
+  }
+
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: 5%;
+  }
+
+  main div:first-of-type {
+    grid-row: span 2;
+  }
+
+  /* index pagina */
+
+  .body_grid {
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "images textbox1"
+    "images textbox2"
+    "trending1 trending1"
+    "trending2 trending2"
+    "trending3 trending3"
+    "reviews reviews";
+  }
+  
+}
+
+@media (max-width: 54.9em) {
+  .body_grid {
+    grid-template-areas: 
+    "textbox1"
+    "images"
+    "textbox2"
+    "trending1"
+    "trending2"
+    "trending3"
+    "reviews"
+    
+  }
+
+  .home-trending img:nth-last-child(-n+4){
+    display: none;
+  }
+
+  .home-listing {
+    width: 22%;
+  }
 }

@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -11,7 +13,9 @@
 
     
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style-grid.css">
     <link rel="stylesheet" href="media.css">
+    
 
     <link rel="icon" type="image/x-icon" href="vinylicon.ico">
 </head>
@@ -22,7 +26,6 @@
                 <ul class="nav">
                     <li><a href="index.html" class="nav_a">Home</a></li>
                     <li><a href="trending.html" class="nav_a">Trending</a></li>
-                    <li><a href="sale.html" class="nav_a">Sale</a></li>
                     <li><a href="categories.html" class="nav_a">Categories</a></li>
                     <li><a href="support.html" class="nav_a">Support</a></li>
                     <li>
@@ -30,10 +33,10 @@
                             <input type="checkbox" id="checkbox_toggle">
                             <label for="checkbox_toggle">My account &#11167;</label>
                             <ul class="dropdown_ul">
-                                <li class="dropdown_li"><a href="#" class="nav_a">My Profile</a></li>
+                                <li class="dropdown_li"><a href="myprofile.html" class="nav_a">My Profile</a></li>
                                 <li class="dropdown_li"><a href="#" class="nav_a">Messages&nbsp;&nbsp;&nbsp;&#10103;</i></a></li>
                                 <li class="dropdown_li"><a href="#" class="nav_a">Settings</a></li>
-                                <li class="dropdown_li"><a href="#" class="nav_a" style="color:red;">Logout</a></li>
+                                <li class="dropdown_li"><a href="index.html" class="nav_a" style="color:red;">Logout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,22 +53,25 @@
                   <button type="submit" class="search_icon">&#128269;</button>
               </div>
             </div>
-           
-
+            
         </header>
-        <div class="body">
 
-            <div class="homeimagediv">
+
+        <div class="body_grid">
+
+            <div class="index_images">
                 <img src="images/turntable-setup-modern-powered-speakers.png" class="mySlides">
                 <img src="images/record-store.png" class="mySlides">
                 <img src="images/needle-on-record.jpg" class="mySlides">
-                <div class="row">
-                <div class="homesection1">
-                    <h1 class="vinylswap_logo">VinylSwap</h1>
-                    <h2 class="readyto">Ready to sell, buy and trade your vinyl?</h2>
-                </div>
-                <div class="homesection2">
-                    <h1 class="madeeasy">Selling vinyl made easy.</h1>
+            </div>
+
+            <div class="index_box1">
+                <h1 class="vinylswap_logo">VinylSwap</h1>
+                <h2 class="readyto">Ready to sell, buy and trade your vinyl?</h2>
+            </div>
+
+            <div class="index_box2">
+                <h1 class="madeeasy">Selling vinyl made easy.</h1>
                     <div class="figures">
                     <figure>
                         <img src="images/clipboard.png" class="psh">
@@ -90,40 +96,33 @@
                         <figcaption class="figcation1">Ship</figcaption>
                       </figure>
                     </div>
-                </div>
-            </div>
             </div>
 
-            <br>
-            <div class="home-trending">
-            <h3>Trending This Week: New</h3>
-                <img class="home-listing" src="images/igor.jpg"></img>
-                <img class="home-listing" src="images/tonightthatimightsee.png"></img>
-                <img class="home-listing" src="images/chanchan.png"></img>
-                <img class="home-listing" src="images/gewoonandre.png"></img>
-                <img class="home-listing" src="images/harryshouse.png"></img>
-                <img class="home-listing" src="images/kickinside.png"></img>
-                <img class="home-listing" src="images/loveless.jpg"></img>
-                <img class="home-listing" src="images/softparadenext.png"></img>
+            <div class="home-trending span-2 trending1"> 
+                <h3>Trending This Week: New</h3>
+                    <img class="home-listing" src="images/igor.jpg"></img>
+                    <img class="home-listing" src="images/tonightthatimightsee.png"></img>
+                    <img class="home-listing" src="images/chanchan.png"></img>
+                    <img class="home-listing" src="images/gewoonandre.png"></img>
+                    <img class="home-listing" src="images/harryshouse.png"></img>
+                    <img class="home-listing" src="images/kickinside.png"></img>
+                    <img class="home-listing" src="images/loveless.jpg"></img>
+                    <img class="home-listing" src="images/mbv.png"></img>
             </div>
 
-            <br><br>
-
-            <div class="home-trending">
-                <h3>On Sale: New & Second-Hand</h3>
-                <img class="home-listing" src="images/bornintheusa.png"></img>
-                <img class="home-listing" src="images/thepolice.png"></img>
-                <img class="home-listing" src="images/sonicyouth.png"></img>
-                <img class="home-listing" src="images/dorisdayenandere.png"></img>
-                <img class="home-listing" src="images/supertrouper.png"></img>
-                <img class="home-listing" src="images/boypablo.png"></img>
-                <img class="home-listing" src="images/tvgirl.png"></img>
-                <img class="home-listing" src="images/softparadenext.png"></img>
+            <div class="home-trending span-2 trending2">
+                    <h3>On Sale: New & Second-Hand</h3>
+                    <img class="home-listing" src="images/bornintheusa.png"></img>
+                    <img class="home-listing" src="images/thepolice.png"></img>
+                    <img class="home-listing" src="images/sonicyouth.png"></img>
+                    <img class="home-listing" src="images/dorisdayenandere.png"></img>
+                    <img class="home-listing" src="images/supertrouper.png"></img>
+                    <img class="home-listing" src="images/boypablo.png"></img>
+                    <img class="home-listing" src="images/tvgirl.png"></img>
+                    <img class="home-listing" src="images/finelines.png"></img>
             </div>
 
-            <br><br>
-            
-            <div class="home-trending">
+            <div class="home-trending span-2 trending3">
                 <h3>Trending This Week: Second-Hand</h3>
                 <img class="home-listing" src="images/darksideofthemoon.png"></img>
                 <img class="home-listing" src="images/time.png"></img>
@@ -132,16 +131,59 @@
                 <img class="home-listing" src="images/heart.png"></img>
                 <img class="home-listing" src="images/bad.png"></img>
                 <img class="home-listing" src="images/beachboys.png"></img>
-                <img class="home-listing" src="images/softparadenext.png"></img>
+                <img class="home-listing" src="images/UFO.png"></img>
             </div>
-            
-            <footer>
-                <hr>
-                <p>Made by Joris Hageman</p>
-                
-            </footer>
-        
-        </div>
+
+            <div class="reviews span-2">
+                <h3>What do our users say?</h3>
+
+                <div class="reviews_ratings">
+                    
+                    <section>
+                        <span>&#129492;&#127998;</span>
+                        <p>Really easy to use!</p>
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">   
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">
+                        <p>Using VinylSwap has been a real pleaure due to the easy use and good support when help is needed.</p>
+                    </section>
+
+                    <section>
+                        <span>&#129489;&#127995;&#8205;&#129457;</span>
+                        <p>Quick service when needed!</p>
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">   
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">
+                        <p>I was in need of some service a time ago and they were very quick to help!</p>
+                    </section>
+
+                    <section>
+                        <span>&#129492;&#127995;</span>
+                        <p>Fair prices and great website</p>
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">   
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-full-star.png">
+                        <img src="images/stars/rating-empty-star.png">
+                        <p>I have been shopping here for some while and I like it so far!</p>
+                    </section>
+
+                </div>
+
+            </div>
+
+
+        </div> <!--Einde body div-->
+
+        <footer>
+            <hr>
+            <p>Made by Joris Hageman</p>
+        </footer>
+
         <script src="myscripts.js"></script>
     </body>
 </html>
