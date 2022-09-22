@@ -14,8 +14,7 @@
     }
 
     .figure_promoted_profile {
-      margin-left: 9.5%;
-      margin-right: 11%;
+      margin-inline: 8%;
     }
 
     .categories_wrapper {
@@ -37,8 +36,7 @@
 
 @media screen and (min-width: 1000px) {
     .trending_page_listings {
-        margin-left: 15%;
-        margin-right: 17%;
+        margin-inline: 17%;
     }
 }
 
@@ -82,6 +80,19 @@
 }
 
 @media (max-width: 54.9em) {
+  header {
+    position: sticky;
+    top:0;
+    border-radius: 0px;
+    background-color: white;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .index_box1 {
+    margin-top: 2%;
+  }
+
   .body_grid {
     grid-template-areas: 
     "textbox1"
@@ -101,4 +112,29 @@
   .home-listing {
     width: 22%;
   }
+
+  .left {
+    display: none;
+  }
+
+  .header_left_mobile {
+    display: flex;
+  }
+
+  .reviews_ratings section:last-of-type {
+    display: none;
+  }
+
+  .reviews section {
+    width: 50%;
+  }
+
+  .reviews_ratings {
+    justify-content: space-around;
+  }
+
+  .reviews h3 {
+    margin-top: 1%;
+  }
 }
+
