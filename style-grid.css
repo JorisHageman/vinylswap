@@ -1,3 +1,9 @@
+.body_grid_trending
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .body_grid {
     margin-left: 2vw;
     margin-right: 3vw;
@@ -61,3 +67,45 @@
 .reviews {
     grid-area: reviews;
 }
+
+
+/* Trending pagina grid */
+.body_grid_trending {
+    display: grid;
+    gap: 2rem;
+
+    margin-inline: 12vw;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.figure_promoted_profile{
+    grid-column: span 4;
+    width: 100%;
+}
+
+.filter_div {
+    grid-column: span 4;
+    margin-inline: 12%;
+    padding: 1%;
+}
+
+.filter_div div {
+    padding: 0.5vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page_selector{
+    grid-column: span 4;
+}
+
+.body_grid_categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.categories_category figure {
+    margin: 0.5vw;
+  }

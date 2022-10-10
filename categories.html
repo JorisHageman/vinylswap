@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -11,8 +13,9 @@
 
     
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style-grid.css">
     <link rel="stylesheet" href="support_css.css">
+    <link rel="stylesheet" href="media.css">
 
     <link rel="icon" type="image/x-icon" href="vinylicon.ico">
 </head>
@@ -31,7 +34,7 @@
                             <label for="checkbox_toggle">My account &#11167;</label>
                             <ul class="dropdown_ul">
                                 <li class="dropdown_li"><a href="myprofile.html" class="nav_a">My Profile</a></li>
-                                <li class="dropdown_li"><a href="#" class="nav_a">Messages&nbsp;&nbsp;&nbsp;&#10103;</i></a></li>
+                                <li class="dropdown_li"><a href="#" class="nav_a">Messages <div class="notificatie_animatie">&nbsp;&nbsp;&nbsp;&#10103;</div></a></li>
                                 <li class="dropdown_li"><a href="#" class="nav_a">Settings</a></li>
                                 <li class="dropdown_li"><a href="index.html" class="nav_a" style="color:red;">Logout</a></li>
                             </ul>
@@ -39,6 +42,36 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="header_left_mobile">
+
+                
+                <h1>VinylSwap</h1>
+                
+                    <div class="drowdown_mobile">
+                        <img src="images/menu.png" class="hamburger_menu">
+                        <div class="dropdown_mobile_toggle">
+                        
+                            <ul>
+                                <li><a href="index.html" class="nav_a">Home</a></li>
+                                <li><a href="trending.html" class="nav_a">Trending</a></li>
+                                <li><a href="categories.html" class="nav_a">Categories</a></li>
+                                <li><a href="support.html" class="nav_a">Support</a></li>
+                                <li><a href="myprofile.html" class="nav_a">My Profile</a></li>
+                                <li><a href="#" class="nav_a">Messages&nbsp;&nbsp;&nbsp;&#10103;</i></a></li>
+                                <li><a href="#" class="nav_a">Settings</a></li>
+                                <li><a href="index.html" class="nav_a" style="color:red;">Logout</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                   
+                
+            
+            
+
+
+        </div>
             
             <div class="right">
                 <div class="searchbar_div">
@@ -53,11 +86,9 @@
            
 
         </header>
-        <div class="body">
-           
-            <h2 class="trending_p_i">Categories</h2>
 
-            <div class="categories_wrapper">
+        <h2 class="trending_p_i">Categories</h2>
+        <div class="body_grid_categories">
 
                 <div class="categories_selector">
                     <div class="categories_selector_1">
@@ -70,7 +101,7 @@
                         <a class="categories_button" href="#5">Maxi</a>
                         <a class="categories_button" href="#6">R&B</a>
                         <a class="categories_button" href="#7">Hip-Hop</a>
-                        <a class="categories_button" href="#8">Latin</a>
+                        <a class="categories_button" href="#8">Jazz</a>
                     </div>
                 </div>
 
@@ -87,25 +118,26 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/okcomputer.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
-                                €12 <br>
-                                G
+                                €45 <br>
+                                VG
+
                             </figcaption>
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/waitingsun.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
-                                €12 <br>
-                                G
+                                €22 <br>
+                                VG+
                             </figcaption>
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/tameimpala.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
-                                €12 <br>
+                                €31 <br>
                                 G
                             </figcaption>
                         </figure>
@@ -116,33 +148,33 @@
                     
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/jackson5dianaross.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
-                                €12 <br>
+                                €14 <br>
+                                VG+
+                            </figcaption>
+                        </figure>
+                        <figure class="trending_figure">
+                            <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
+                            <img src="images/neverforever.png" class="trending_listing">
+                            <figcaption class="figcaption_trending"> 
+                                €7,50 <br>
                                 G
                             </figcaption>
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/parachutes.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
-                                €12 <br>
+                                €18 <br>
                                 G
                             </figcaption>
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/abbeyroad.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
-                                €12 <br>
-                                G
-                            </figcaption>
-                        </figure>
-                        <figure class="trending_figure">
-                            <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
-                            <figcaption class="figcaption_trending"> 
-                                €12 <br>
+                                €50 <br>
                                 G
                             </figcaption>
                         </figure>
@@ -153,7 +185,7 @@
                     
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/redheadedstranger.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -161,7 +193,7 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/coatofmany.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -169,7 +201,7 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/dreamingmydreams.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -177,7 +209,7 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/raycharles.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -190,7 +222,7 @@
                     
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/singles/doorssingle.jpg" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -198,7 +230,7 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/singles/policesingle.jpg" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -206,7 +238,7 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/singles/elvissingle.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -214,7 +246,7 @@
                         </figure>
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
-                            <img src="images/heart.png" class="trending_listing">
+                            <img src="images/singles/doemaarsingle.png" class="trending_listing">
                             <figcaption class="figcaption_trending"> 
                                 €12 <br>
                                 G
@@ -334,7 +366,7 @@
                 </div>
 
                 <div class="categories_category" id="8">
-                    <h3>Latin</h3>
+                    <h3>Jazz</h3>
                     
                         <figure class="trending_figure">
                             <figcaption class="figcaption_profile">&#129492;&#127997; JorisH</figcaption>
@@ -369,12 +401,6 @@
                             </figcaption>
                         </figure>
                 </div>
-
-                
-
-            </div>
-            
-
 
         </div>
         <footer>

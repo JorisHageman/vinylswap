@@ -13,10 +13,6 @@
       display: none;
     }
 
-    .figure_promoted_profile {
-      margin-inline: 8%;
-    }
-
     .categories_wrapper {
       margin-inline: 20%;
     }
@@ -136,5 +132,111 @@
   .reviews h3 {
     margin-top: 1%;
   }
+
+  
+  .header_left_mobile .dropdown_mobile_toggle{
+    display: none;
+  }
+
+  .support_border {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left_support{
+    width: 100%;
+    padding-left: 50%;
+  }
+
+  .support_icons {
+    width: 10%;
+  }
+
+  .support_adress {
+    margin-top: 5%;
+  }
+
+  .name_email {
+    flex-direction: column;
+  }
+
+  .name_email div:first-of-type {
+    margin-bottom: 5%;
+  }
+
+  .name_email div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 9%;
+  }
+
+  .body_grid_trending {
+    margin-inline: 0px;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-inline: 1vw
+  }
+
+  .figure_promoted_profile{
+    grid-column: span 2;
+  }
+
+  .filter_div {
+      grid-column: span 2;
+      margin-inline: 0;
+      width: 95%;
+      margin-left: 1.5%;
+   }
+
+  .page_selector{
+      grid-column: span 2;
+  }
+
+  .trending_listing{
+    width: 45vw;
+    height: auto;
+  }
+
+  .trending_listing_previewalbum{
+    width: 45vw;
+    height: auto;
+  }
+
+  .filter_select{
+    font-size: 2.25vw;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .figcaption_profile {
+  font-size: 3vw;
+  }
+
+  .body_grid_categories {
+    margin-inline: 5px;
+  }
+
+  .categories_category figure {
+    margin: 1vw;
+  }
+
+  .categories_category img {
+    width: 35vw;
+  }
+
+  .categories_category figure:nth-last-child(-n+2) {
+    display: none;
+  }
+
+  .figure_promoted_profile figure:nth-last-child(-n+2) {
+    display: none;
+  }
 }
 
+@media (max-width: 500px){
+
+  .filter_select{
+    margin: 0;
+  }
+
+}
